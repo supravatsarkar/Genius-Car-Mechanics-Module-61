@@ -1,0 +1,27 @@
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+/* responsieve media query  */
+@media only screen and (max-width:688px){
+    .service-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .App {
+        text-align: center;
+        margin: 0 10%;
+      }
+    
+}
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .service-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .App {
+        text-align: center;
+        margin: 0 5%;
+      }
+}
