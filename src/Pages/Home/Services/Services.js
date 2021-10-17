@@ -13,9 +13,9 @@ const Services = () => {
     }, [])
 
     return (
-        <div id="services-sec">
-            <h1 className="text-primary mt-3">Our Services</h1>
-            <div className="service-container">
+        <div id="services-sec" >
+            <h1 className="text-primary mt-3" >Our Services</h1>
+            <div className="service-container" >
                 {
                     services.map((service, indx) => <Service
                         key={indx}

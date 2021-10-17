@@ -11,7 +11,7 @@ const Login = () => {
 
     const handleGoogleSignIn = () => {
         signUsingGoogle()
-            .then(resutl => {
+            .then(result => {
                 history.push(redirect_url);
             })
             .catch(error => {
