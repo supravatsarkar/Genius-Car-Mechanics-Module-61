@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark " sticky="top" expand="lg">
                 <Container>
-                    <Navbar.Brand as={HashLink} to="/home" className="fs-3 fw-bolder text-warning">Genius Car Mechanics</Navbar.Brand>
+                    <Navbar.Brand as={HashLink} to="/home" className="fs-3 fw-bolder text-warning" on>Genius Car Mechanics</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
