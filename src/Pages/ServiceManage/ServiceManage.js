@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const ServiceManage = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:5000/services')
+        axios.get('https://dry-spire-84918.herokuapp.com/services')
             .then(res => {
                 console.log(res.data);
                 setServices(res.data);
@@ -13,7 +13,7 @@ const ServiceManage = () => {
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/services/${id}`
+        const url = `https://dry-spire-84918.herokuapp.com/services/${id}`
         axios.delete(url, {})
             .then(res => {
                 console.log(res.data);

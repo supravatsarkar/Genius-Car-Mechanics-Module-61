@@ -6,7 +6,7 @@ const Booking = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/services/book/${serviceId}`;
+        const url = `https://dry-spire-84918.herokuapp.com/services/book/${serviceId}`;
         axios.get(url)
             .then(res => {
                 console.log("Single service-", res.data);
